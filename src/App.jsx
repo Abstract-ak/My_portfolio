@@ -7,11 +7,13 @@ import Projects from "./components/Project";
 import Experience from "./components/Experience";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <Router>
       <div className="App">
+        <Navbar />
         <Hero />
         <About />
         <Projects />
