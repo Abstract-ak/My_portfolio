@@ -4,7 +4,7 @@ import heroImage from "../assets/Profile-pic.jpg";
 
 const Hero = () => {
   return (
-    <section className="hero min-h-screen flex flex-col-reverse md:flex-row items-center justify-center bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-600 px-6 relative overflow-hidden">
+    <section id="home" className="hero min-h-screen flex flex-col-reverse md:flex-row items-center justify-center bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-600 px-6 relative overflow-hidden">
       {/* Animated Background Elements */}
       <motion.div
         className="absolute w-64 h-64 rounded-full bg-white/10 -top-32 -left-32"
