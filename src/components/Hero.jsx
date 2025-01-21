@@ -12,10 +12,11 @@ const Hero = () => {
         transition={{ duration: 1 }}
         className="text-center md:text-left text-white"
       >
-        <h1 className="text-5xl font-bold mb-4">Hi, I'm Akash</h1>
-        <p className="text-xl mb-6">
-          Building scalable, impactful software solutions with a focus on
-          user-centric designs and development
+        <h1 className="text-6xl font-bold mb-3">Hi, I'm Akash</h1>
+        <h2 className="text-5xl font-bold mb-4">Full Stack developer</h2>
+        <p className="text-xl font-semibold mb-6">
+          Building Scalable Solutions with Creativity, Precision, and Passion
+          for Innovation.
         </p>
         <div className="space-x-4">
           <button className="bg-white text-blue-600 px-6 py-2 rounded-lg shadow-md hover:bg-gray-200">
