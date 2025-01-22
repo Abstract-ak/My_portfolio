@@ -68,14 +68,45 @@ const About = () => {
   return (
     <section id="about" className="about py-20 bg-gray-50 text-gray-800" ref={observerRef}>
       <div className="container mx-auto px-6">
-        <h2 className="text-4xl font-bold mb-8 text-center slide-in">About Me</h2>
+        <h2 className="text-4xl font-bold mb-8 text-center slide-in gradient-text">About Me</h2>
         
-        <div className="max-w-3xl mx-auto text-lg text-gray-600 mb-16 text-center slide-in">
-          <p className="mb-6">
-            I am a MERN Stack Developer specializing in building full-stack web applications
-            with MongoDB, Express.js, React, and Node.js. I create scalable and
-            efficient solutions with modern web technologies.
-          </p>
+        <div className="max-w text-lg text-gray-600 mb-16 slide-in">
+          <div className="space-y-8">
+            <div>
+            <h3 className="text-xl font-semibold mb-3 text-gray-700 gradient-text">Who I Am</h3>
+              <p className="leading-relaxed text-left">
+              I'm Akash, a passionate Full Stack Developer with over a year of experience designing and developing robust, scalable, and user-friendly applications. My expertise spans across backend technologies like Node.js, frontend frameworks such as React, and databases like MySQL and MongoDB. Whether it’s crafting seamless user interfaces or optimizing system performance, I thrive on delivering solutions that are both efficient and elegant.
+              </p>
+            </div>
+            
+            <div>
+              <h3 className="text-xl font-semibold mb-3 text-gray-800 gradient-text">Development Journey</h3>
+              <p className="leading-relaxed text-left">
+                My journey in web development has equipped me with expertise in modern JavaScript frameworks and libraries,
+                allowing me to build everything from dynamic single-page applications to complex full-stack solutions.
+                I take pride in writing maintainable code, implementing responsive designs, and ensuring optimal
+                performance across all devices.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold mb-3 text-gray-800 gradient-text">Technical Expertise</h3>
+              <p className="leading-relaxed text-left">
+                Beyond the core MERN stack, I'm well-versed in state management with Redux, API authentication using JWT,
+                and modern styling frameworks like Tailwind CSS and Material UI. My experience extends to version control
+                with Git, API testing with Postman, and deploying applications to various cloud platforms.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold mb-3 text-gray-800 gradient-text">Continuous Growth</h3>
+              <p className="leading-relaxed text-left">
+                I'm constantly exploring new technologies and best practices to stay at the forefront of web development.
+                Whether it's optimizing database queries, implementing secure authentication systems, or creating
+                responsive user interfaces, I'm committed to delivering high-quality solutions that exceed expectations.
+              </p>
+            </div>
+          </div>
         </div>
 
         <div className="space-y-12">
