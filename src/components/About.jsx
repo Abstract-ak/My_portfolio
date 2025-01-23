@@ -97,8 +97,9 @@ const About = () => {
                 Who I Am
               </h3>
               <p className="leading-relaxed text-left">
-                I'm Akash, a passionate Full Stack Developer with over a year of
-                experience designing and developing robust, scalable, and
+                I'm Akash, a passionate Full Stack Developer with over{" "}
+                <srong className="font-bold">2 years </srong>
+                of experience in designing and developing robust, scalable, and
                 user-friendly applications. My expertise spans across backend
                 technologies like Node.js, frontend frameworks such as React,
                 and databases like MySQL and MongoDB. Whether it’s crafting
@@ -143,23 +144,23 @@ const About = () => {
                 <ul className="list-disc pl-5 space-y-2">
                   <li>
                     <strong>Full stack Expertise: </strong>
-                    Proficient in both frontend and backend development, allowing me to create
-                    cohesive and end-to-end solutions.
+                    Proficient in both frontend and backend development,
+                    allowing me to create cohesive and end-to-end solutions.
                   </li>
                   <li>
                     <strong>Problem Solver: </strong>
-                    Skilled at breaking down complex challenges into actionable steps, delivering effective
-                    results under tight deadlines.
+                    Skilled at breaking down complex challenges into actionable
+                    steps, delivering effective results under tight deadlines.
                   </li>
                   <li>
                     <strong>IoT enabled software solution: </strong>
-                    Experience in building IoT-enabled systems that leverage real-time data for
-                    smarter solutions.
+                    Experience in building IoT-enabled systems that leverage
+                    real-time data for smarter solutions.
                   </li>
                   <li>
                     <strong>Scalability Focus: </strong>
-                    Strong emphasis on building systems that can grow alongside user needs without
-                    compromising performance.
+                    Strong emphasis on building systems that can grow alongside
+                    user needs without compromising performance.
                   </li>
                 </ul>
               </p>
