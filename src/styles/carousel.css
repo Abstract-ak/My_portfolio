@@ -1,0 +1,50 @@
+.linkedin-posts-carousel {
+  padding: 20px 0 40px 0;
+}
+
+.linkedin-posts-carousel .swiper-slide {
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.linkedin-posts-carousel .swiper-slide-active {
+  transform: scale(1.02);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #2563eb !important;
+  background: white;
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+}
+
+.dark .swiper-button-next,
+.dark .swiper-button-prev {
+  color: #eab308 !important;
+  background: #18181b;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 20px !important;
+}
+
+.swiper-pagination-bullet {
+  background: #2563eb !important;
+}
+
+.dark .swiper-pagination-bullet {
+  background: #eab308 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #2563eb !important;
+  transform: scale(1.2);
+}
+
+.dark .swiper-pagination-bullet-active {
+  background: #eab308 !important;
+}

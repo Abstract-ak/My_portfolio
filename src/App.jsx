@@ -4,10 +4,11 @@ import "./styles/tailwind.css";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Projects from "./components/Project";
-import Experience from "./components/Experience";
+// import Experience from "./components/Experience";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import Blog from "./components/Blog";
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
         <Hero />
         <About />
         <Projects />
-        <Experience />
+        {/* <Experience /> */}
+        <Blog />
         <Contact />
         <Footer />
       </div>
