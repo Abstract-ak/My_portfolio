@@ -1,30 +1,49 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaGraduationCap, FaCertificate, FaBlog, FaLinkedin, FaHeart, FaComment, FaShare } from "react-icons/fa";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Autoplay } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import '../styles/carousel.css';
+import {
+  FaGraduationCap,
+  FaCertificate,
+  FaBlog,
+  FaLinkedin,
+  FaHeart,
+  FaComment,
+  FaShare,
+} from "react-icons/fa";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "../styles/carousel.css";
 
 const Blog = () => {
   const content = {
     blogs: [
       {
-        title: "Understanding Modern Web Development",
-        date: "January 2025",
-        description: "Exploring the latest trends in web development and how they shape the future of the internet.",
-        link: "#",
-        tags: ["Web Development", "Technology", "Frontend"],
+        title: "10 Backend Concepts Every Frontend Developer Should Know",
+        date: "January 27, 2024",
+        description:
+          "A comprehensive guide to essential backend concepts that frontend developers should understand to become more effective full-stack developers. Covers RESTful APIs, Authentication, Databases, Security, and more.",
+        link: "https://github.com/Abstract-ak/My_portfolio/blob/main/src/blogs/backend-concepts.mdx",
+        tags: ["Backend", "Web Development", "Programming", "Full Stack"],
+        image: "https://placehold.co/600x400/png",
       },
       {
-        title: "The Impact of AI in Software Development",
-        date: "December 2024",
-        description: "How artificial intelligence is revolutionizing the way we write and maintain code.",
-        link: "#",
-        tags: ["AI", "Programming", "Technology"],
+        title: "Understanding Modern Web Development",
+        date: "January 2024",
+        description:
+          "Modern web development has evolved significantly, embracing new technologies, methodologies, and best practices. Let's explore the key aspects that define contemporary web development.",
+        link: "https://github.com/Abstract-ak/My_portfolio/blob/main/src/blogs/modern-web-development.mdx",
+        tags: ["Web Development", "Technology", "Frontend", "Backend"],
+        image: "https://placehold.co/600x400/png",
       },
+      // {
+      //   title: "The Impact of AI in Software Development",
+      //   date: "December 2024",
+      //   description: "How artificial intelligence is revolutionizing the way we write and maintain code.",
+      //   link: "#",
+      //   tags: ["AI", "Programming", "Technology"],
+      // },
     ],
     certifications: [
       {
@@ -69,31 +88,36 @@ const Blog = () => {
     linkedinPosts: [
       {
         id: 1,
-        content: "Excited to share that I've just completed my latest project on React and Node.js! 🚀 Here's what I learned about building scalable applications...",
-        date: "2 days ago",
-        likes: 156,
-        comments: 23,
-        shares: 12,
-        image: "https://placehold.co/600x400/png",
+        name: "Sustainable Outreach and Universal Leadership (SOUL) Limited",
+        content:
+          "We are absolutely thrilled to extend our sincerest appreciation and applause to our incredible Sustainable Outreach and Universal Leadership (SOUL) Limited's ISBT Team for their outstanding dedication and hard work, culminating in the successful completion of the ISBT Baramunda Bhubaneswar project! ",
+        date: "10 Months ago",
+        likes: 72,
+        comments: 2,
+        shares: 6,
+        image:
+          "https://media.licdn.com/dms/image/v2/D4D22AQGuZdbCQTJSMw/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1709374201500?e=1740614400&v=beta&t=ZIomziAR8iQLbsIdgQjN5TjrG7GZNADSzw35AaV0va0",
       },
       {
         id: 2,
-        content: "Just published my first technical blog post about mastering TypeScript! 📝 Check out these tips that helped me level up my development game...",
+        name: "Akash Sharma",
+        content:
+          "Just published my first technical blog post about mastering TypeScript! 📝 Check out these tips that helped me level up my development game...",
         date: "1 week ago",
-        likes: 243,
-        comments: 45,
-        shares: 18,
+        likes: 43,
+        comments: 12,
+        shares: 8,
         image: "https://placehold.co/600x400/png",
       },
-      {
-        id: 3,
-        content: "Thrilled to announce that I've earned my AWS certification! 🏆 Here's my journey and some tips for aspiring cloud engineers...",
-        date: "2 weeks ago",
-        likes: 489,
-        comments: 67,
-        shares: 34,
-        image: "https://placehold.co/600x400/png",
-      },
+      // {
+      //   id: 3,
+      //   content: "Thrilled to announce that I've earned my AWS certification! 🏆 Here's my journey and some tips for aspiring cloud engineers...",
+      //   date: "2 weeks ago",
+      //   likes: 489,
+      //   comments: 67,
+      //   shares: 34,
+      //   image: "https://placehold.co/600x400/png",
+      // },
     ],
   };
 
@@ -121,7 +145,8 @@ const Blog = () => {
             </h2>
             <div className="mt-6 max-w-2xl mx-auto">
               <p className="text-lg text-gray-600 dark:text-gray-400">
-                Exploring ideas, sharing experiences, and documenting my growth through writing and learning
+                Exploring ideas, sharing experiences, and documenting my growth
+                through writing and learning
               </p>
             </div>
           </div>
@@ -163,6 +188,7 @@ const Blog = () => {
                 </div>
                 <a
                   href={blog.link}
+                  target="_blank"
                   className="text-blue-600 dark:text-yellow-500 font-medium hover:underline"
                 >
                   Read More →
@@ -216,7 +242,7 @@ const Blog = () => {
                       </div>
                       <div>
                         <div className="font-semibold text-gray-900 dark:text-white">
-                          Your Name
+                          {post.name}
                         </div>
                         <div className="text-sm text-gray-500 dark:text-gray-400">
                           {post.date}
