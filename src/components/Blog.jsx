@@ -47,42 +47,42 @@ const Blog = () => {
     ],
     certifications: [
       {
-        title: "AWS Certified Solutions Architect",
-        issuer: "Amazon Web Services",
+        title: "Highradius Product & Engineering Internship",
+        issuer: "Highradius",
+        date: "2022",
+        credentialLink:
+          "https://drive.google.com/file/d/1_SKjqk_JvFORNsOulySPnQXowN-s8vri/view?usp=sharing",
+      },
+      {
+        title: "Frontend Developer (React)",
+        issuer: "HackerRank",
+        date: "2024",
+        credentialLink: "https://www.hackerrank.com/certificates/7488ad6a8ed1",
+      },
+      {
+        title: "The javascript Course",
+        issuer: "Udemy",
         date: "2024",
         credentialLink: "#",
       },
       {
-        title: "Professional Full Stack Developer",
-        issuer: "Meta",
-        date: "2024",
-        credentialLink: "#",
+        title: "Google IT Support",
+        issuer: "Coursera",
+        date: "2020",
+        credentialLink:
+          "https://coursera.org/share/f7b8d5a8903b8430c3c45d4e30c98bd8",
       },
     ],
     academics: [
       {
-        title: "Bachelor of Technology in Computer Science",
-        institution: "Your University Name",
-        year: "2020-2024",
-        achievements: [
-          "Graduated with First Class Honours",
-          "Published research paper on Machine Learning",
-          "Led the university coding club",
-        ],
-      },
-    ],
-    courses: [
-      {
-        title: "Advanced React Patterns",
-        platform: "Frontend Masters",
-        completionDate: "2024",
-        skills: ["React", "JavaScript", "Design Patterns"],
-      },
-      {
-        title: "Machine Learning Specialization",
-        platform: "Coursera",
-        completionDate: "2024",
-        skills: ["Python", "TensorFlow", "Data Science"],
+        title: "Bachelor of Technology in Information Technology",
+        institution: "KIIT University",
+        year: "2019-2023",
+        // achievements: [
+        //   "Graduated with First Class Honours",
+        //   "Published research paper on Machine Learning",
+        //   "Led the university coding club",
+        // ],
       },
     ],
     linkedinPosts: [
@@ -324,49 +324,13 @@ const Blog = () => {
               <div className="text-gray-600 dark:text-gray-400 mb-4">
                 {academic.institution} • {academic.year}
               </div>
-              <ul className="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-400">
+              {/* <ul className="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-400">
                 {academic.achievements.map((achievement, achieveIndex) => (
                   <li key={achieveIndex}>{achievement}</li>
                 ))}
-              </ul>
+              </ul> */}
             </motion.div>
           ))}
-        </div>
-
-        {/* Relevant Courses Section */}
-        <div>
-          <h3 className="text-3xl font-bold text-gray-800 dark:text-white mb-8 flex items-center gap-3">
-            <FaGraduationCap className="text-blue-600 dark:text-yellow-500" />
-            Relevant Courses
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {content.courses.map((course, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1 }}
-                className="bg-gray-50 dark:bg-zinc-900/50 p-6 rounded-xl"
-              >
-                <h4 className="text-xl font-bold text-gray-800 dark:text-white mb-2">
-                  {course.title}
-                </h4>
-                <div className="text-gray-600 dark:text-gray-400 mb-3">
-                  {course.platform} • Completed {course.completionDate}
-                </div>
-                <div className="flex flex-wrap gap-2">
-                  {course.skills.map((skill, skillIndex) => (
-                    <span
-                      key={skillIndex}
-                      className="px-3 py-1 bg-blue-100 dark:bg-yellow-900/20 text-blue-600 dark:text-yellow-500 rounded-full text-sm"
-                    >
-                      {skill}
-                    </span>
-                  ))}
-                </div>
-              </motion.div>
-            ))}
-          </div>
         </div>
       </div>
     </section>
