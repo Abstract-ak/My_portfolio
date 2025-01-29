@@ -20,26 +20,26 @@ const Projects = () => {
         "python",
       ],
       githubLink: "#",
-      liveLink: "http://btms.bsabt.odisha.gov.in/",
+      liveLink: "https://isbt.soulunileaders.in/",
       image: "/public/Baramunda-BSABT.jpg",
     },
     {
       title: "Food Order-APP",
       description:
         "A dynamic web application allows user to browse various meals, add items to cart, edit quantities, and complete a checkout form. Users can place orders through a dummy backend, simulating the ordering process.",
-      technologies: ["Python", "OpenAI API", "React", "FastAPI", "PostgreSQL"],
+      technologies: ["react", "node.js", "express", "context-api", "State Hooks"],
       githubLink: "https://github.com/Abstract-ak/Food-Order-APP",
       liveLink: "#",
-      image: "/portfolio-gen.png",
+      image: "/public/Reactfoodshop-Img.jpg",
     },
     {
-      title: "E-Commerce Analytics Dashboard",
+      title: "Park Booking and Management System",
       description:
-        "A powerful analytics platform providing real-time insights into sales, customer behavior, and inventory management. Includes predictive analytics for sales forecasting.",
-      technologies: ["Vue.js", "Django", "Redis", "AWS", "D3.js"],
+        "A comprehensive park management solution featuring user-friendly booking interfaces for parks, playgrounds, and event spaces. Implemented real-time availability tracking and conflict management. Includes an administrative dashboard for centralized booking management and maintenance tracking with detailed analytics.",
+      technologies: ["React", "Node.js", "PostgreSQL", "Express", "Redux", "tailwind", "jwt", "crypto.js"],
       githubLink: "#",
       liveLink: "#",
-      image: "/analytics-dash.png",
+      image: "/public/park-booking.png",
     },
     {
       title: "Smart Home Automation System",
