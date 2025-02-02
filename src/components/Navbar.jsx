@@ -11,7 +11,7 @@ const Navbar = () => {
     <nav className="navbar fixed top-0 left-0 w-full bg-white shadow-md z-50">
       <div className="container mx-auto flex justify-between items-center px-6 py-4">
         {/* Logo */}
-        <div className="text-xl font-bold text-blue-600">Akash's Portfolio</div>
+        <div className="text-xl font-bold text-blue-600">Akash</div>
 
         {/* Navigation Links */}
         <ul className="hidden md:flex space-x-6 text-gray-800">

@@ -41,21 +41,21 @@ const Projects = () => {
       liveLink: "#",
       image: "/public/park-booking.png",
     },
-    {
-      title: "Smart Home Automation System",
-      description:
-        "IoT-based home automation system with mobile app control, energy monitoring, and smart device integration. Features include voice commands and automated routines.",
-      technologies: [
-        "React Native",
-        "Firebase",
-        "Node.js",
-        "MQTT",
-        "TensorFlow",
-      ],
-      githubLink: "#",
-      liveLink: "#",
-      image: "/smart-home.png",
-    },
+    // {
+    //   title: "Smart Home Automation System",
+    //   description:
+    //     "IoT-based home automation system with mobile app control, energy monitoring, and smart device integration. Features include voice commands and automated routines.",
+    //   technologies: [
+    //     "React Native",
+    //     "Firebase",
+    //     "Node.js",
+    //     "MQTT",
+    //     "TensorFlow",
+    //   ],
+    //   githubLink: "#",
+    //   liveLink: "#",
+    //   image: "/smart-home.png",
+    // },
   ];
 
   return (
