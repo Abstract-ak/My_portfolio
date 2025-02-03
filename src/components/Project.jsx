@@ -27,7 +27,13 @@ const Projects = () => {
       title: "Food Order-APP",
       description:
         "A dynamic web application allows user to browse various meals, add items to cart, edit quantities, and complete a checkout form. Users can place orders through a dummy backend, simulating the ordering process.",
-      technologies: ["react", "node.js", "express", "context-api", "State Hooks"],
+      technologies: [
+        "react",
+        "node.js",
+        "express",
+        "context-api",
+        "State Hooks",
+      ],
       githubLink: "https://github.com/Abstract-ak/Food-Order-APP",
       liveLink: "#",
       image: "/public/Reactfoodshop-Img.jpg",
@@ -36,10 +42,20 @@ const Projects = () => {
       title: "Park Booking and Management System",
       description:
         "A comprehensive park management solution featuring user-friendly booking interfaces for parks, playgrounds, and event spaces. Implemented real-time availability tracking and conflict management. Includes an administrative dashboard for centralized booking management and maintenance tracking with detailed analytics.",
-      technologies: ["React", "Node.js", "PostgreSQL", "Express", "Redux", "tailwind", "jwt", "crypto.js"],
+      technologies: [
+        "React",
+        "Node.js",
+        "PostgreSQL",
+        "Express",
+        "Redux",
+        "tailwind",
+        "jwt",
+        "crypto.js",
+        "Redis",
+      ],
       githubLink: "#",
       liveLink: "#",
-      image: "/public/park-booking.png",
+      image: "/public/amaBhoomi_home.jpg",
     },
     // {
     //   title: "Smart Home Automation System",
@@ -109,28 +125,30 @@ const Projects = () => {
                   </div>
 
                   <div className="flex items-center gap-6">
-                    {project.githubLink && project.githubLink.startsWith('http') && (
-                      <a
-                        href={project.githubLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 text-gray-700 hover:text-blue-600 dark:text-white dark:hover:text-yellow-500 transition-colors"
-                      >
-                        <FaGithub className="text-xl" />
-                        <span className="font-medium">Source Code</span>
-                      </a>
-                    )}
-                    {project.liveLink && project.liveLink.startsWith('http') && (
-                      <a
-                        href={project.liveLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 text-gray-700 hover:text-blue-600 dark:text-white dark:hover:text-yellow-500 transition-colors"
-                      >
-                        <FaExternalLinkAlt />
-                        <span className="font-medium">Live Demo</span>
-                      </a>
-                    )}
+                    {project.githubLink &&
+                      project.githubLink.startsWith("http") && (
+                        <a
+                          href={project.githubLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-2 text-gray-700 hover:text-blue-600 dark:text-white dark:hover:text-yellow-500 transition-colors"
+                        >
+                          <FaGithub className="text-xl" />
+                          <span className="font-medium">Source Code</span>
+                        </a>
+                      )}
+                    {project.liveLink &&
+                      project.liveLink.startsWith("http") && (
+                        <a
+                          href={project.liveLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-2 text-gray-700 hover:text-blue-600 dark:text-white dark:hover:text-yellow-500 transition-colors"
+                        >
+                          <FaExternalLinkAlt />
+                          <span className="font-medium">Live Demo</span>
+                        </a>
+                      )}
                   </div>
                 </div>
 
