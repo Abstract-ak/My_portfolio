@@ -1,22 +1,22 @@
 import React from "react";
 import { motion } from "framer-motion";
-import heroImage from "../assets/Profile-pic.jpg";
+import heroImage from "../assets/passportPic.jpg";
 import resume from "../assets/akash_sharma_Resume.pdf"; // Ensure your resume is placed in the assets folder
 
 const Hero = () => {
-  const handleContactClick = (e) => {
-    e.preventDefault();
-    const contactSection = document.querySelector('#contact');
-    const navHeight = document.querySelector('nav')?.offsetHeight || 0;
-    
-    if (contactSection) {
-      const topOffset = contactSection.offsetTop - navHeight;
-      window.scrollTo({
-        top: topOffset,
-        behavior: 'smooth'
-      });
-    }
-  };
+  // const handleContactClick = (e) => {
+  //   e.preventDefault();
+  //   const contactSection = document.querySelector('#contact');
+  //   const navHeight = document.querySelector('nav')?.offsetHeight || 0;
+
+  //   if (contactSection) {
+  //     const topOffset = contactSection.offsetTop - navHeight;
+  //     window.scrollTo({
+  //       top: topOffset,
+  //       behavior: 'smooth'
+  //     });
+  //   }
+  // };
 
   return (
     <section
@@ -101,14 +101,14 @@ const Hero = () => {
           >
             Hire Me
           </motion.button> */}
-          <motion.button
-            onClick={handleContactClick}
+          <motion.a
+            href="mailto:akashsharma4957@gmail.com"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="bg-transparent text-white px-6 py-2 rounded-lg shadow-lg border-2 border-white hover:bg-white hover:text-purple-600 transition-all duration-300 font-semibold"
           >
             Contact Me
-          </motion.button>
+          </motion.a>
         </motion.div>
       </motion.div>
 
