@@ -1,8 +1,11 @@
 import React from "react";
 import { FaLinkedin, FaFacebook, FaInstagram } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
+import { useTheme } from '../context/ThemeContext';
 
 const Navbar = () => {
+  const { theme, toggleTheme } = useTheme();
+
   const handleScroll = (id) => {
     document.getElementById(id).scrollIntoView({ behavior: "smooth" });
   };
@@ -15,7 +18,7 @@ const Navbar = () => {
 
         {/* Navigation Links */}
         <ul className="hidden md:flex space-x-6 text-gray-800">
-          {["Home", "About", "Works", "Blog"].map((item) => (
+          {['Home', 'About', 'Works', 'Blog'].map((item) => (
             <li
               key={item}
               className="cursor-pointer hover:text-blue-600"
@@ -26,8 +29,17 @@ const Navbar = () => {
           ))}
         </ul>
 
+
         {/* Social Media Icons */}
-        <div className="flex space-x-4">
+        <div className="flex space-x-4 items-center">
+          {/* Theme Toggle Button */}
+            <button
+              onClick={toggleTheme}
+              className="bg-transparent text-gray-800 hover:bg-gray-200 px-4 py-2 rounded-full transition-all duration-300"
+              aria-label="Toggle Theme"
+            >
+              {theme === 'light' ? '🌙' : '☀️'}
+            </button>
           <a
             href="https://twitter.com/"
             target="_blank"

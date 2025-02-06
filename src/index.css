@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Light Theme */
+  --background-primary: #ffffff;
+  --background-secondary: #f4f4f4;
+  --text-primary: #333333;
+  --text-secondary: #666666;
+  --accent-primary: #6b46c1;
+  --accent-secondary: #805ad5;
+}
+
+[data-theme='dark'] {
+  /* Dark Theme */
+  --background-primary: #121212;
+  --background-secondary: #1e1e1e;
+  --text-primary: #ffffff;
+  --text-secondary: #b0b0b0;
+  --accent-primary: #9f7aea;
+  --accent-secondary: #805ad5;
+}
+
+body {
+  background-color: var(--background-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Additional theme-specific styles can be added here */
+/* section id="works" className="py-20 bg-white dark:bg-zinc-950" */
