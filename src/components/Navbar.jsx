@@ -33,13 +33,13 @@ const Navbar = () => {
         {/* Social Media Icons */}
         <div className="flex space-x-4 items-center">
           {/* Theme Toggle Button */}
-            <button
+            {/* <button
               onClick={toggleTheme}
               className="bg-transparent text-gray-800 hover:bg-gray-200 px-4 py-2 rounded-full transition-all duration-300"
               aria-label="Toggle Theme"
             >
               {theme === 'light' ? '🌙' : '☀️'}
-            </button>
+            </button> */}
           <a
             href="https://twitter.com/"
             target="_blank"
