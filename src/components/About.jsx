@@ -57,7 +57,7 @@ const About = () => {
 
     // MERN Stack
     { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
-    { name: "Express.js", icon: SiExpress, color: "#000000" },
+    { name: "Express.js", icon: SiExpress, color: "#68a063" },
     { name: "React", icon: FaReact, color: "#61DAFB" },
     { name: "Node.js", icon: FaNode, color: "#339933" },
 

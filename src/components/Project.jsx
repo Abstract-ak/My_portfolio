@@ -28,7 +28,7 @@ const Projects = () => {
       description:
         "A dynamic web application allows user to browse various meals, add items to cart, edit quantities, and complete a checkout form. Users can place orders through a dummy backend, simulating the ordering process.",
       technologies: [
-        "react",
+        "React",
         "node.js",
         "express",
         "context-api",
