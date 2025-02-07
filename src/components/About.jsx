@@ -57,7 +57,7 @@ const About = () => {
 
     // MERN Stack
     { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
-    { name: "Express.js", icon: SiExpress, color: "#000000" },
+    { name: "Express.js", icon: SiExpress, color: "#68a063" },
     { name: "React", icon: FaReact, color: "#61DAFB" },
     { name: "Node.js", icon: FaNode, color: "#339933" },
 
@@ -73,7 +73,7 @@ const About = () => {
 
     // Development Tools
     { name: "Git", icon: FaGit, color: "#F05032" },
-    { name: "GitHub", icon: FaGithub, color: "#181717" },
+    { name: "GitHub", icon: FaGithub, color: "#333" },
     { name: "VS Code", icon: VscVscode, color: "#007ACC" },
     { name: "Postman", icon: SiPostman, color: "#FF6C37" },
     { name: "npm", icon: FaNpm, color: "#CB3837" },
@@ -82,18 +82,21 @@ const About = () => {
   return (
     <section
       id="about"
-      className="about py-20 bg-gray-50 text-gray-800"
+      className="about py-20 bg-gray-50 dark:bg-zinc-950"
       ref={observerRef}
     >
-      <div className="container mx-auto px-6">
-        <h2 className="text-4xl font-bold mb-8 text-center slide-in gradient-text">
-          About Me
+      <div className="container mx-auto px-4">
+        <h2 className="text-4xl md:text-6xl font-bold mb-8 text-gray-800 dark:text-white relative z-10 text-center ">
+          <span className="relative inline-block">
+            About Me
+            <div className="absolute -bottom-2 left-0 w-full h-3 bg-blue-600/20 dark:bg-yellow-500/20 -skew-x-6 -z-10" />
+          </span>
         </h2>
 
-        <div className="max-w text-lg text-gray-600 mb-16 slide-in">
+        <div className="max-w text-lg text-gray-600 dark:text-gray-400 mb-16 slide-in">
           <div className="space-y-6">
             <div>
-              <h3 className="text-xl font-semibold mb-3 text-gray-700 gradient-text">
+              <h3 className="text-xl font-semibold mb-3 text-gray-800 dark:text-white gradient-text">
                 Who I Am
               </h3>
               <p className="leading-relaxed text-left">
