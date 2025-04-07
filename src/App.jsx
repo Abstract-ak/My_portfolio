@@ -14,17 +14,26 @@ import Blog from "./components/Blog";
 function App() {
   return (
     <ThemeProvider>
-      <Router>
-        <div className={` App`}>
+      <Router basename="/My_portfolio">
+        <div className={`App`}>
           {/* <ThemeToggle /> */}
           <Navbar />
-          <Hero />
-          <About />
-          <Projects />
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <>
+                  <Hero />
+                  <About />
+                  <Projects />
+                  <Blog />
+                  <Footer />
+                </>
+              }
+            />
+          </Routes>
           {/* <Experience /> */}
-          <Blog />
           {/* <Contact /> */}
-          <Footer />
         </div>
       </Router>
     </ThemeProvider>
