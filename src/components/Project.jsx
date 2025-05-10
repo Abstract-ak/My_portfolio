@@ -21,7 +21,7 @@ const Projects = () => {
       ],
       githubLink: "#",
       liveLink: "https://isbt.soulunileaders.in/",
-      image: "/public/Baramunda-BSABT.jpg",
+      image: "Baramunda-BSABT.jpg",
     },
     {
       title: "Food Order-APP",
@@ -36,7 +36,7 @@ const Projects = () => {
       ],
       githubLink: "https://github.com/Abstract-ak/Food-Order-APP",
       liveLink: "#",
-      image: "/public/Reactfoodshop-Img.jpg",
+      image: "Reactfoodshop-Img.jpg",
     },
     {
       title: "Park Booking and Management System",
@@ -55,7 +55,7 @@ const Projects = () => {
       ],
       githubLink: "#",
       liveLink: "#",
-      image: "/public/amaBhoomi_home.jpg",
+      image: "amaBhoomi_home.jpg",
     },
     // {
     //   title: "Smart Home Automation System",
